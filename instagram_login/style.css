@@ -10,7 +10,7 @@
 body{
     padding: 50px;
     display: flex;
-    height: 100vh;
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -142,7 +142,8 @@ body{
     align-items:  center;
     border: 1px solid var(--form-border);
     width: var(--width-form);
-    height: 68px
+    height: 68px;
+    margin-bottom: 20px;
 }
 .sing_up{
     text-decoration: none;
@@ -152,7 +153,6 @@ body{
 .apps{
     display: flex;
     width: var(--width-form);
-    padding: 16px;
     flex-direction: column;
     text-align: center;
     margin-bottom: 50px;

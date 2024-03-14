@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --purpletopink: #5943AA, #6B45AB, #6D45AC, #8147AD,#9248AE,#A44AB0,#DA4FB3;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to right, var(--purpletopink));
+}
+.nav-bar{
+    background-color: white;
+    display: flex;
+    /* padding-right: 90px;
+    padding-left: 120px; */
+    justify-content:space-around;
+    height: 60px;
+}
+.logo {
+    width: 111.42px;
+}
+.info button{
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+}
+.info a{
+    text-decoration: none;
+    color: black;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+.nav-bar ul > li{
+    margin-left: 30px;
+    align-self: center;
+}
+.login{
+    display: flex;
+    height: 100%;
+    font-size: 19px;
+    align-items: center;
+}  
+.trello_free{
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    background-color: #0065FF;
+    font-weight: bold;
+    height: 100%;
+    padding: 30px;
+    color: white;
+}
+
+.ai_features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DEEBFF;
+    height: 60px;
+    /* #091E42
+    #0747A6 */
+}
+.ai_features span{
+    color:  #091E42;
+}
+.ai_features a{
+    color: #0747A6;
+
+}

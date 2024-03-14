@@ -36,23 +36,44 @@ body{
     width: 100%;
     margin-bottom: 8px;
     border: 1.5px solid rgba(110, 107, 107, 0.24);
-    border-radius:5px;
+    border-radius:3px;
     background-color: #FAFAFA;
+    padding: 10px;
+    font-size: .8rem;
+}
+#password{
+    position:relative;
 }
 #username:focus-within, #password:focus-within{
     outline: none;
-    border: 1.5px solid rgba(0, 0, 0, 0.385)
+    border: 1.5px solid rgba(0, 0, 0, 0.385);
 }
 #username::placeholder, #password::placeholder{
-    padding: 10px;
     font-size: .78rem;
 }
 .disable{
-    opacity: 0.7;    ;
+    opacity: 0.7;
 }
 
+.password_show{
+    height: 40px;
+}
+#show{
+    display: none;
+    position: absolute;
+    margin-left: -48px;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .9rem;
+    color: rgb(78, 77, 77);
+    background-color: #FAFAFA;
+}
+#show:hover{
+    color: rgba(0, 0, 0, 0.384);
+}
 .submit{
-    margin-top: 7px;
     background-color: #0095F6;
     height: 35px;
     width: 100%;
@@ -61,6 +82,7 @@ body{
     color: white;
     border-radius: 9px;
     border: none;
+    margin-top: 14px;
     margin-bottom: 10px;
 }
 .facebook{

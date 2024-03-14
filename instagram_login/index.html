@@ -14,9 +14,12 @@
         <img src="img/Instagram_logo.png" class="instagram_logo" alt="">
         <form action="" method="post">
             <div class="login">
-                <input type="text" name="username" id="username" placeholder="Phone number, username, or email">
-                <input type="password" name="password" id="password" placeholder="Password">
-                <input class="submit disable" type="submit" value="Log in">
+                <input  oninput='digitou()' type="text" name="username" id="username" placeholder="Phone number, username, or email">
+                <div class="password_show">
+                    <input oninput='digitou()'type="password" name="password" id="password" placeholder="Password">
+                    <span  onclick="show_password()" class="show" id="show">Show</span>
+                </div>
+                <input class="submit disable" id="submit" type="submit" value="Log in">
             </div>
         </form>
         <div class="separator">
@@ -64,6 +67,8 @@
             <span class="year">© 2024 Instagram from Meta</span>
         </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -1,21 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
 :root{
-    --purpletopink: #5943AA, #6B45AB, #6D45AC, #8147AD,#9248AE,#A44AB0,#DA4FB3;
+    --purpletopink: #5943AA, #6B45AB, #8147AD,#A44AB0,#DA4FB3,#E74FB3;
 }
 body{
-    font-family: sans-serif;
+    font-family: "Roboto Slab";
     height: 100vh;
-    background-image: linear-gradient(to right, var(--purpletopink));
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(45deg, var(--purpletopink));
 }
 .nav-bar{
-    background-color: white;
     display: flex;
-    /* padding-right: 90px;
-    padding-left: 120px; */
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+    background-color: white;
     justify-content:space-around;
     height: 60px;
 }
@@ -50,7 +58,7 @@ body{
     margin-left: 30px;
     align-items: center;
     background-color: #0065FF;
-    font-weight: bold;
+    font-weight: 400;
     height: 100%;
     padding: 30px;
     color: white;
@@ -71,4 +79,32 @@ body{
 .ai_features a{
     color: #0747A6;
 
+}
+.container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_desc{
+    padding: 5px;
+    max-width: 560px;
+}
+.title{
+    color: white;
+    font-family: "Bebas Neue";
+    font-size: 3rem;
+}
+.desc{
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: 1.2rem;
+}
+.img_title{
+    width:650px;
+}
+.submit input{
+    background-color: #0065FF;
+    color: white;
+    border: none;
 }

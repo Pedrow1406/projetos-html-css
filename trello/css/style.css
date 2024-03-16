@@ -11,12 +11,10 @@
     --purpletopink: #5943AA, #6B45AB, #8147AD,#A44AB0,#DA4FB3,#E74FB3;
 }
 body{
-    font-family: "Roboto Slab";
-    height: 100vh;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: linear-gradient(45deg, var(--purpletopink));
+    font-family: "Roboto Slab", sans-serif;
+    min-height: 100vh;
+    /* overflow: hidden; */
+    
 }
 .nav-bar{
     display: flex;
@@ -81,14 +79,31 @@ body{
 
 }
 .container{
-    height: 705px;
+    background-image: linear-gradient(45deg, var(--purpletopink));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 760px;
     display:flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    position: relative;
+}
+
+#wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background-image: linear-gradient(45deg, var(--purpletopink));' */
+    rotate: 180deg;
 }
 .title_desc{
     padding: 5px;
     max-width: 560px;
+
+}
+.title_desc, .img_title{
+    margin-top: 100px;
 }
 .title{
     color: white;
@@ -99,12 +114,52 @@ body{
     color: white;
     font-family: "Roboto Slab";
     font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 .img_title{
-    width:650px;
+    width:632.98px;
+    height:558.58px;
+    z-index: 2;
+    position: relative;
+    
 }
-.submit input{
+#email{
+    width: 300px;
+    font-size: 1.1rem;
+    border: none;
+    transition: outline 0.2s ease;
+}
+.email{
+    margin-bottom: 16px;
+}
+
+#email,#submit{
+    height: 50px;
+    border-radius: 5px;
+    padding: 14px;
+}
+#submit{
+    position: relative;
+    width: 230px;
+    font-weight: 600;
+    font-size: 1rem;
     background-color: #0065FF;
     color: white;
     border: none;
+    text-align: left;
+    transition: background-color 0.5s ease;
+    z-index: 2;
+    
+
+}
+#submit:hover{
+    background-color: #0747A6;
+}
+#email::placeholder{
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgba(102, 102, 102, 0.59);
+}
+#email:focus{
+    outline: 3px solid white;
 }

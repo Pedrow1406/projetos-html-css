@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <span class="title">Login</span>
+            <div class="inputs">
+                <input oninput="digito()" type="text" name="username" id="username" placeholder="Username">
+                <div class="password">
+                    <input oninput="digito()" type="password" name="password" id="password" placeholder="Password">
+                    <div class="eyes" onclick="eye_click()">
+                        <img src="img/eye_opened.png" id="eye_open"alt="" class="eye_opened">
+                        <img src="img/eye_closed.png" id="eye_close" alt="" class="eye_closed">
+                    </div>
+                </div>
+            </div>
+            <input type="submit" id="login" class="login disabled" value="Login">
+        </form>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

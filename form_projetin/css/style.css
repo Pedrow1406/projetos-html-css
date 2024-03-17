@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/wallpaper_anime.png');
+    background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    border: 1px solid black;
+    height: 400px;
+    width: 341.92px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.86);
+}
+.title{
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#username, #password{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(156, 153, 153, 0.203);
+    border: .2px solid rgba(158, 158, 158, 0.559);
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border .7s ease;
+
+}
+#username:focus, #password:focus{
+    border: 1.5px solid rgb(44, 47, 81);
+}
+#username::placeholder,#password::placeholder{
+    font-size: .9rem;
+}
+
+.login{
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(12, 12, 206, 0.667);
+    color: white;
+    font-size: .9rem;
+    width: 50%;
+    outline: none;
+    border: none;
+    transition: background-color .5s ease;
+}
+.login_enabled:hover{
+    background-color: rgba(4, 4, 118, 0.738);
+}
+.disabled{
+    opacity: .7;
+}
+.password{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+}
+.eye_opened, .eye_closed{
+    display: none;
+    width: 30px;
+    top:10px;
+    right:10px;
+    position: absolute;
+}
